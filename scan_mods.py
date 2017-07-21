@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# defo.dirty+github@gmail.com
+# Sazonov Alexander
+# ---------------------------------
+# make DMPModControl.txt from GameData folder
+# scan all folders in path
+# get all dll files to  !optional–files ssection
+# get all parts files to !partslist
+# ---------------------------------
+
+
 
 import sys
 import os
@@ -8,10 +18,10 @@ import commands
 
 
 class PartClass:
+    name = ""
+    content = ""
     def __init__(self, name, path):
         self.path = path
-        self.name = ""
-        self.content = ""
         self.filename = name
         self.init()
 
